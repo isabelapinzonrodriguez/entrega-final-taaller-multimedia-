@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual de supervivencia: Semana 16 · Uniandes</title>
+  <meta name="description" content="Fanzine web sarcástico y dramático para sobrevivir a la semana 16 en la Universidad de los Andes. Proyecto académico no oficial de Taller Multimedia 1.">
+  <meta property="og:title" content="Manual de supervivencia: Semana 16">
+  <meta property="og:description" content="Parciales, entregas finales, café y llanto. Un fanzine para sobrevivir al final del semestre.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFD100'/%3E%3Ctext x='50' y='72' font-size='64' font-family='Impact,sans-serif' text-anchor='middle'%3E16%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="topbar" id="topbar">
+  <a href="#inicio" class="topbar__logo">MANUAL<span>S16</span></a>
+  <div class="cordura" aria-label="Nivel de cordura">
+    <span class="cordura__label">CORDURA</span>
+    <div class="cordura__track"><div class="cordura__fill" id="corduraFill"></div></div>
+    <span class="cordura__num" id="corduraNum">100%</span>
+  </div>
+  <nav class="topbar__nav" aria-label="Capítulos">
+    <a href="#c1">01</a><a href="#c2">02</a><a href="#c3">03</a><a href="#c4">04</a>
+    <a href="#c5">05</a><a href="#c6">06</a><a href="#c7">07</a><a href="#c8">08</a>
+  </nav>
+  <button class="sound-btn" id="soundBtn" aria-pressed="false" title="Activar o silenciar efectos de sonido">
+    <span class="sound-btn__icon" aria-hidden="true">🔇</span><span class="sound-btn__text">SONIDO: OFF</span>
+  </button>
+</header>
+
+<main>
+
+
+<section class="hero" id="inicio">
+  <div class="hero__photo" aria-hidden="true">
+    <img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Edificios_de_la_Universidad_de_los_Andes,_tomada_desde_Monserrate.jpg?width=1800" alt="" data-credit="monserrate">
+  </div>
+  <div class="hero__shade"></div>
+
+  <div class="hero__inner">
+    <p class="hero__kicker tape">EDICIÓN ESPECIAL · FIN DE SEMESTRE · NO OFICIAL</p>
+    <h1 class="hero__title">
+      <span class="line l1">SEMANA</span>
+      <span class="line l2"><em>diez y</em></span>
+      <span class="line l3">SEIS</span>
+    </h1>
+    <p class="hero__sub">Manual de supervivencia para sobrevivir (o al menos intentarlo) a la última semana del semestre en la <strong>Universidad de los Andes</strong>.</p>
+
+    <div class="hero__cta">
+      <a href="#c1" class="btn btn--yellow">Empezar el sufrimiento ↓</a>
+      <a href="#fin" class="btn btn--ghost">Saltar al final (spoiler: sí sobrevives)</a>
+    </div>
+  </div>
+
+  <figure class="hero__gif sticker rot-r">
+    <img src="img/alerta.gif" alt="Animación de una alerta que dice entrega en 3 horas">
+    <figcaption>Tu celular a las 3 a. m.</figcaption>
+  </figure>
+  <div class="hero__stamp" aria-hidden="true">NO<br>DORMIR<br>NO<br>LLORAR<br>(SÍ)</div>
+</section>
+
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>PARCIAL ✺ ENTREGA FINAL ✺ CAFÉ ✺ LLANTO ✺ TRASNOCHE ✺ PROCRASTINACIÓN ✺ "YA LO TERMINO" ✺ ANSIEDAD ✺ VACACIONES ✺ </span>
+    <span>PARCIAL ✺ ENTREGA FINAL ✺ CAFÉ ✺ LLANTO ✺ TRASNOCHE ✺ PROCRASTINACIÓN ✺ "YA LO TERMINO" ✺ ANSIEDAD ✺ VACACIONES ✺ </span>
+  </div>
+</div>
+
+
+<section class="intro paper">
+  <div class="wrap intro__grid">
+    <div class="intro__text">
+      <h2 class="h-script">¿Qué es la semana 16?</h2>
+      <p class="dropcap">Es esa semana donde todos los profesores recuerdan, <em>al mismo tiempo</em>, que existen. Donde cinco entregas finales, tres parciales y un trabajo "sencillo" de último minuto deciden vivir en la misma agenda. Donde la felicidad de las vacaciones está <strong>a un paso</strong>… pero ese paso es una trinchera.</p>
+      <p>Este fanzine no te va a salvar la nota. Te va a hacer sentir <span class="hl">acompañado</span>, que es casi lo mismo. Léelo con café, sin dormir y con la pestaña del trabajo abierta en la otra ventana.</p>
+      <div class="radio">
+        <span class="radio__tag">BANDA SONORA OFICIAL</span>
+        <b>Lo-fi para llorar con estilo</b>
+        <audio controls loop preload="none" src="audio/lofi-colapso.wav">Tu navegador no soporta audio.</audio>
+      </div>
+      <p class="intro__aside">⚠ Aviso legal: este proyecto es un ejercicio académico no oficial de Taller Multimedia 1. No representa a la Universidad de los Andes ni reemplaza el apoyo de profesionales.</p>
+    </div>
+    <div class="intro__stack">
+      <figure class="foto polaroid rot-l"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Edificio_Mario_Laserna.jpg?width=1000" alt="Fachada del Edificio Mario Laserna" data-credit="ml"><figcaption>El ML, escenario de 9 de cada 10 crisis.</figcaption></figure>
+      <figure class="foto polaroid rot-r2"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Edificio_Roberto_Franco.jpg?width=1000" alt="Edificio Roberto Franco" data-credit="franco"><figcaption>Aquí alguien está terminando un parcial. Seguro.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cap cap--dark" id="c1">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">01</span>
+      <div><h2 class="cap__title">DIAGNÓSTICO</h2><p class="cap__sub">¿Estás oficialmente en semana 16? Marca lo que aplique. Sé honesto, nadie te juzga (todos están igual).</p></div>
+    </header>
+
+    <div class="diag">
+      <ul class="diag__list" id="diagList">
+        <li><label><input type="checkbox"><span>Dije "esta noche sí duermo" y me creí.</span></label></li>
+        <li><label><input type="checkbox"><span>Mi cena fue café y una empanada de la cafetería.</span></label></li>
+        <li><label><input type="checkbox"><span>Tengo más de 12 pestañas abiertas y ninguna es lo que debería estar haciendo.</span></label></li>
+        <li><label><input type="checkbox"><span>Lloré en la biblioteca, en el baño o en ambos.</span></label></li>
+        <li><label><input type="checkbox"><span>Reorganicé mi escritorio en lugar de estudiar. Quedó hermoso.</span></label></li>
+        <li><label><input type="checkbox"><span>Calculé "cuánto necesito sacar" en el parcial final como 14 veces.</span></label></li>
+        <li><label><input type="checkbox"><span>Le escribí "no entiendo nada" al grupo de WhatsApp y 40 personas dijeron "yo tampoco".</span></label></li>
+        <li><label><input type="checkbox"><span>Mi archivo se llama "entrega_final_FINAL_v7_ahora_sí".</span></label></li>
+        <li><label><input type="checkbox"><span>Me dio risa nerviosa viendo el calendario.</span></label></li>
+        <li><label><input type="checkbox"><span>Ya estoy planeando las vacaciones aunque aún no he terminado nada.</span></label></li>
+      </ul>
+
+      <aside class="diag__result" id="diagResult" aria-live="polite">
+        <img id="diagGif" src="img/cargando-99.gif" alt="Barra de carga atascada en 99 por ciento">
+        <div class="diag__score"><span id="diagCount">0</span><small>/10 síntomas</small></div>
+        <p class="diag__verdict" id="diagVerdict">Marca algo. Aunque sea por probar tu cordura.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+<section class="cap cap--paper" id="c2">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">02</span>
+      <div><h2 class="cap__title">EL CAMPUS DEL COLAPSO</h2><p class="cap__sub">Mapa ilustrado (no oficial, no a escala, totalmente emocional) de los lugares donde vas a pasar la semana. Toca los puntos.</p></div>
+    </header>
+
+    <div class="mapa-wrap">
+      <div class="mapa" id="mapa">
+        <svg viewBox="0 0 900 560" role="img" aria-label="Mapa ilustrado y no oficial del campus con puntos de supervivencia" id="mapaSvg">
+          <defs>
+            <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#17171722" stroke-width="1"/></pattern>
+            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#2F6B4F" stroke-width="2" opacity=".35"/></pattern>
+            <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
+          </defs>
+          <rect width="900" height="560" fill="#F4EDE0"/>
+          <rect width="900" height="560" fill="url(#grid)"/>
+
+     
+          <g filter="url(#rough)">
+            <path d="M640 0 L900 0 L900 560 L700 560 Q660 420 700 300 Q620 180 640 0Z" fill="#2F6B4F" opacity=".25"/>
+            <path d="M640 0 L900 0 L900 560 L700 560 Q660 420 700 300 Q620 180 640 0Z" fill="url(#hatch)"/>
+          </g>
+          <text x="725" y="90" class="m-script" transform="rotate(-8 725 90)">Cerros</text>
+          <text x="712" y="122" class="m-script" transform="rotate(-8 712 122)">Orientales</text>
+          <text x="690" y="152" class="m-tiny">(Monserrate te mira. Te juzga.)</text>
+
+      
+          <g stroke="#171717" stroke-width="26" stroke-linecap="round" fill="none" opacity=".12">
+            <path d="M0 480 L640 480"/><path d="M80 0 L80 560"/><path d="M0 70 L600 70"/>
+          </g>
+          <text x="210" y="486" class="m-street">CALLE 19</text>
+          <text x="40" y="320" class="m-street" transform="rotate(-90 40 320)">CARRERA 1 ESTE</text>
+
+     
+          <g class="bld" filter="url(#rough)">
+            <rect x="130" y="110" width="230" height="95" rx="4" fill="#B5442E" stroke="#171717" stroke-width="4"/>
+            <rect x="400" y="150" width="170" height="120" rx="4" fill="#FFD100" stroke="#171717" stroke-width="4"/>
+            <rect x="150" y="260" width="150" height="85" rx="4" fill="#F4EDE0" stroke="#171717" stroke-width="4"/>
+            <rect x="340" y="320" width="200" height="75" rx="4" fill="#1F4E8C" stroke="#171717" stroke-width="4"/>
+            <rect x="140" y="395" width="260" height="55" rx="4" fill="#2F6B4F" stroke="#171717" stroke-width="4" opacity=".9"/>
+            <rect x="440" y="415" width="150" height="55" rx="28" fill="#6fae6f" stroke="#171717" stroke-width="4"/>
+          </g>
+          <text x="245" y="165" class="m-bld" fill="#F4EDE0" text-anchor="middle">ML</text>
+          <text x="485" y="218" class="m-bld" text-anchor="middle">SD</text>
+          <text x="225" y="310" class="m-bld" text-anchor="middle">Franco</text>
+          <text x="440" y="365" class="m-bld" fill="#F4EDE0" text-anchor="middle">Bloque Q</text>
+          <text x="270" y="430" class="m-bld" fill="#F4EDE0" text-anchor="middle">Plazoleta</text>
+          <text x="515" y="448" class="m-bld" text-anchor="middle">Cancha</text>
+          <path d="M305 205 Q350 230 400 215" stroke="#171717" stroke-width="3" stroke-dasharray="7 7" fill="none"/>
+          <path d="M300 345 Q320 385 360 395" stroke="#171717" stroke-width="3" stroke-dasharray="7 7" fill="none"/>
+
+  
+          <g transform="translate(850 500)"><circle r="28" fill="#F4EDE0" stroke="#171717" stroke-width="3"/><path d="M0 -22 L7 4 L0 0 L-7 4Z" fill="#B5442E"/><text y="-34" text-anchor="middle" class="m-tiny">N</text></g>
+          <text x="30" y="30" class="m-note">MAPA NO OFICIAL · ILUSTRATIVO</text>
+        </svg>
+
+        <button class="pin" style="--x:36.5%;--y:24%" data-pin="0" aria-label="Biblioteca"><span>1</span></button>
+        <button class="pin" style="--x:60.5%;--y:31%" data-pin="1" aria-label="Edificio SD"><span>2</span></button>
+        <button class="pin" style="--x:31.5%;--y:49.5%" data-pin="2" aria-label="Edificio Franco"><span>3</span></button>
+        <button class="pin" style="--x:57%;--y:60.5%" data-pin="3" aria-label="Bloque Q"><span>4</span></button>
+        <button class="pin" style="--x:41.5%;--y:73.6%" data-pin="4" aria-label="Plazoleta"><span>5</span></button>
+        <button class="pin" style="--x:65%;--y:77%" data-pin="5" aria-label="Cancha"><span>6</span></button>
+      </div>
+
+      <aside class="mapa__info" id="pinInfo" aria-live="polite">
+        <span class="mapa__tag" id="pinTag">PUNTO 0</span>
+        <h3 id="pinTitle">Toca un punto</h3>
+        <p id="pinText">Cada pin es un lugar donde, con alta probabilidad, vas a estar sufriendo esta semana. Elige tu fortaleza.</p>
+        <div class="mapa__meters">
+          <label>Ruido<i><b id="mRuido" style="width:20%"></b></i></label>
+          <label>Café disponible<i><b id="mCafe" style="width:20%"></b></i></label>
+          <label>Probabilidad de llanto<i><b id="mLlanto" style="width:20%"></b></i></label>
+        </div>
+      </aside>
+    </div>
+
+    <div class="galeria reveal">
+      <figure class="foto tape-photo rot-l"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Uniandes_Campus.jpg?width=1200" alt="Vista general del campus" data-credit="campus"><figcaption>Vista del campus. Se ve tranquilo. Es un engaño.</figcaption></figure>
+      <figure class="foto tape-photo rot-r2"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Uniandes_BloqueQ_9piso.jpg?width=1200" alt="Bloque Q, piso 9" data-credit="bloqueq"><figcaption>Piso 9 del Q: vista bonita, problemas feos.</figcaption></figure>
+      <figure class="foto tape-photo rot-l2"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Los_Andes_University_bigbuildings_20121004.jpg?width=1200" alt="Edificios grandes de la universidad" data-credit="big"><figcaption>Edificios grandes, deudas de sueño más grandes.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+
+<section class="cap cap--yellow" id="c3">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">03</span>
+      <div><h2 class="cap__title">ESPECIES DE ESTUDIANTE</h2><p class="cap__sub">Guía de campo para identificar a tus compañeros en su hábitat natural. Toca una carta para ver su nivel de peligro.</p></div>
+    </header>
+
+    <div class="cards" id="cards">
+      <button class="card" data-i="0"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">👻</span><h3>El Fantasma</h3><p>Desapareció del grupo desde la semana 9.</p></div>
+        <div class="card__back"><h4>Reaparece cuando…</h4><p>…hay que entregar. Escribe "¿qué toca hacer?" a las 11:58 p. m. y encima pide que le expliquen todo.</p><b>Peligro: 🔥🔥🔥</b></div></div></button>
+
+      <button class="card" data-i="1"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">😇</span><h3>El "Ya Entregué"</h3><p>Terminó todo hace una semana. Está bien de la vida.</p></div>
+        <div class="card__back"><h4>Dato clave</h4><p>No se le debe preguntar cómo va. Solo sonríe y dice "yo me organicé". Nadie le cree. Todos le tienen envidia.</p><b>Peligro: 😶 (psicológico)</b></div></div></button>
+
+      <button class="card" data-i="2"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">☕</span><h3>El Cafeinado</h3><p>Su sangre es 80 % espresso. Tiembla, pero produce.</p></div>
+        <div class="card__back"><h4>Señal de alerta</h4><p>Habla rapidísimo, se ríe sin motivo y te jura que "ya casi" termina. Lleva 6 cafés y el trabajo en el título.</p><b>Peligro: 🔥🔥</b></div></div></button>
+
+      <button class="card" data-i="3"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">🎭</span><h3>El Dramático</h3><p>Todo es el fin del mundo. Todo. Cada. Parcial.</p></div>
+        <div class="card__back"><h4>Frase típica</h4><p>"Si pierdo esto, me voy a vivir al campo." Claro, y a las 3 a. m. ya está en el ML con apuntes en cada mano.</p><b>Peligro: 🔥🔥🔥🔥</b></div></div></button>
+
+      <button class="card" data-i="4"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">🧟</span><h3>El Zombie</h3><p>Llegó caminando. Se quedó dormido sentado.</p></div>
+        <div class="card__back"><h4>Hábitat</h4><p>Sofás de la biblioteca, pasillos y cualquier superficie plana. Se le reconoce por el cabello y la mirada perdida. No lo despiertes: sueña con la entrega.</p><b>Peligro: 💤💤💤</b></div></div></button>
+
+      <button class="card" data-i="5"><div class="card__in">
+        <div class="card__front"><span class="card__emoji">🤡</span><h3>El Optimista</h3><p>"No es tanto trabajo, parce."</p></div>
+        <div class="card__back"><h4>Destino</h4><p>Va por su segunda entrega y ya empezó a hablar solo. La semana 16 lo transforma en El Dramático. Es cuestión de horas.</p><b>Peligro: 🌅 (con sorpresa)</b></div></div></button>
+    </div>
+    <p class="cards__hint">* Todas las especies conviven en el mismo salón. Sé amable: tú también eres una.</p>
+  </div>
+</section>
+
+
+<section class="cap cap--dark" id="c4">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">04</span>
+      <div><h2 class="cap__title">CALENDARIO DEL COLAPSO</h2><p class="cap__sub">Siete días, siete emociones, cero horas de sueño reales. Elige un día y mira cómo se ve el drama.</p></div>
+    </header>
+
+    <div class="dias" id="dias" role="tablist" aria-label="Días de la semana 16">
+      <button role="tab" class="dia is-on" data-d="0"><b>LUN</b><span>"Todo bajo control"</span></button>
+      <button role="tab" class="dia" data-d="1"><b>MAR</b><span>"Ok, no tanto"</span></button>
+      <button role="tab" class="dia" data-d="2"><b>MIÉ</b><span>"Voy a morir"</span></button>
+      <button role="tab" class="dia" data-d="3"><b>JUE</b><span>"Ya acepté mi destino"</span></button>
+      <button role="tab" class="dia" data-d="4"><b>VIE</b><span>"Última noche"</span></button>
+      <button role="tab" class="dia" data-d="5"><b>SÁB</b><span>"¿Terminé? ¿Terminé!"</span></button>
+      <button role="tab" class="dia" data-d="6"><b>DOM</b><span>"Resurrección"</span></button>
+    </div>
+
+    <div class="dia-panel">
+      <div class="dia-panel__text">
+        <span class="dia-panel__tag" id="diaTag">LUNES</span>
+        <h3 id="diaTitle">El optimismo inocente</h3>
+        <p id="diaText">Abres la agenda, la miras fijamente y concluyes que "sí se puede". Hasta haces una lista con colores. Es el último momento de paz de tu vida.</p>
+        <p class="dia-panel__quote" id="diaQuote">"Esta semana me organizo bien."</p>
+      </div>
+      <div class="chart" aria-label="Gráfica de estrés y sueño durante la semana">
+        <svg viewBox="0 0 560 300" id="chart">
+          <rect width="560" height="300" fill="none"/>
+          <g class="grid-lines" stroke="#F4EDE033"><path d="M40 40H540M40 100H540M40 160H540M40 220H540M40 260H540"/></g>
+          <polyline id="lineEstres" points="" fill="none" stroke="#B5442E" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline id="lineSueno" points="" fill="none" stroke="#FFD100" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline id="lineCafe" points="" fill="none" stroke="#6fae6f" stroke-width="4" stroke-dasharray="10 8" stroke-linejoin="round" stroke-linecap="round"/>
+          <g id="chartDots"></g>
+          <g class="xlab" fill="#F4EDE0" font-size="13"><text x="40" y="285">LUN</text><text x="120" y="285">MAR</text><text x="200" y="285">MIÉ</text><text x="285" y="285">JUE</text><text x="365" y="285">VIE</text><text x="448" y="285">SÁB</text><text x="505" y="285">DOM</text></g>
+        </svg>
+        <ul class="chart__legend"><li class="lg r">Estrés</li><li class="lg y">Sueño</li><li class="lg g">Cafés</li></ul>
+        <figure class="chart__gif"><img src="img/cafe.gif" alt="Taza de café vaciándose"><figcaption>Cafés consumidos hoy.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cap cap--paper" id="c5">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">05</span>
+      <div><h2 class="cap__title">CALCULADORA DE COLAPSO</h2><p class="cap__sub">Ciencia 100 % real (no). Ingresa tu semana y descubre tu probabilidad de llorar en la biblioteca.</p></div>
+    </header>
+
+    <div class="calc">
+      <div class="calc__inputs">
+        <label class="slider"><span>Parciales esta semana <output id="oPar">3</output></span><input type="range" id="inPar" min="0" max="8" value="3"></label>
+        <label class="slider"><span>Entregas finales <output id="oEnt">5</output></span><input type="range" id="inEnt" min="0" max="10" value="5"></label>
+        <label class="slider"><span>Cafés por día <output id="oCaf">4</output></span><input type="range" id="inCaf" min="0" max="12" value="4"></label>
+        <label class="slider"><span>Horas de sueño por noche <output id="oSue">4</output></span><input type="range" id="inSue" min="0" max="10" value="4"></label>
+        <label class="slider"><span>Trabajos que "empiezo mañana" <output id="oPro">2</output></span><input type="range" id="inPro" min="0" max="8" value="2"></label>
+        <button class="btn btn--black" id="calcBtn">CALCULAR MI DESTINO</button>
+      </div>
+      <div class="calc__out" id="calcOut" aria-live="polite">
+        <div class="meter"><svg viewBox="0 0 200 120"><path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#F4EDE033" stroke-width="22" stroke-linecap="round"/><path id="meterArc" d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#B5442E" stroke-width="22" stroke-linecap="butt" stroke-dasharray="251" stroke-dashoffset="251"/><line id="needle" x1="100" y1="100" x2="100" y2="38" stroke="#171717" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="100" r="8" fill="#171717"/></svg><div class="meter__num"><span id="calcPct">0</span>%</div></div>
+        <p class="calc__label">Probabilidad de llorar en la biblioteca</p>
+        <h3 id="calcTitle">Esperando datos…</h3>
+        <p id="calcMsg">Mueve los controles y presiona el botón. No te vamos a mentir (mucho).</p>
+        <img id="calcGif" src="img/ojos.gif" alt="Ojos cansados">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cap cap--brick" id="c6">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">06</span>
+      <div><h2 class="cap__title">TRADUCTOR PROFE → REALIDAD</h2><p class="cap__sub">Diccionario esencial para entender lo que dicen los profesores y lo que de verdad significa. Pasa el mouse o toca cada frase.</p></div>
+    </header>
+
+    <ul class="traductor" id="traductor">
+      <li><button><span class="t-profe">"Es una entrega sencilla."</span><span class="t-real">Prepárate: son 40 páginas, un video y un prototipo.</span></button></li>
+      <li><button><span class="t-profe">"El parcial es tipo práctica."</span><span class="t-real">Es tipo "nunca vimos esto en clase, pero tú sabrás".</span></button></li>
+      <li><button><span class="t-profe">"No se preocupen, es poquito."</span><span class="t-real">Ya hay estudiantes llorando en el pasillo.</span></button></li>
+      <li><button><span class="t-profe">"Pueden entregar hasta las 11:59."</span><span class="t-real">Entonces nadie entrega antes de las 11:58.</span></button></li>
+      <li><button><span class="t-profe">"Esto lo vimos en la semana 3."</span><span class="t-real">Nadie recuerda la semana 3. Nadie.</span></button></li>
+      <li><button><span class="t-profe">"Cualquier duda me escriben."</span><span class="t-real">Te va a responder en 5 a 7 días hábiles.</span></button></li>
+      <li><button><span class="t-profe">"Es libre, hagan lo que quieran."</span><span class="t-real">Es una trampa. Tiene criterios ocultos.</span></button></li>
+      <li><button><span class="t-profe">"Entreguen con calma."</span><span class="t-real">Nadie ha entregado con calma en la historia del mundo.</span></button></li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="cap cap--paper" id="c7">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">07</span>
+      <div><h2 class="cap__title">KIT DE EMERGENCIA</h2><p class="cap__sub">Arrastra los objetos indispensables hasta la mochila. Ojo: la mochila pesa menos que tus problemas.</p></div>
+    </header>
+
+    <div class="kit">
+      <div class="kit__items" id="kitItems">
+        <div class="item" data-name="Café (el sexto)">☕<small>Café</small></div>
+        <div class="item" data-name="Cargador (80 % de tu vida)">🔌<small>Cargador</small></div>
+        <div class="item" data-name="Audífonos con lofi">🎧<small>Audífonos</small></div>
+        <div class="item" data-name="Paciencia (agotada)">🧘<small>Paciencia</small></div>
+        <div class="item" data-name="Post-its de colores">📝<small>Post-its</small></div>
+        <div class="item" data-name="Empanada de emergencia">🥟<small>Empanada</small></div>
+        <div class="item" data-name="Pañuelos">🧻<small>Pañuelos</small></div>
+        <div class="item" data-name="Gafas anti-ojeras">🕶️<small>Gafas</small></div>
+        <div class="item" data-name="Una excusa creíble">📜<small>Excusa</small></div>
+      </div>
+      <div class="kit__bag" id="kitBag">
+        <div class="bag"><span class="bag__label">LA MOCHILA</span><div class="bag__count"><b id="bagCount">0</b>/9</div></div>
+        <ul class="bag__list" id="bagList"><li class="empty">Aún está vacía. Como tu cabeza el día del parcial.</li></ul>
+        <p class="bag__msg" id="bagMsg"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cap cap--dark" id="c8">
+  <div class="wrap">
+    <header class="cap__head reveal">
+      <span class="cap__num">08</span>
+      <div><h2 class="cap__title">PLAN DE LLANTO &amp; PRIMEROS AUXILIOS</h2><p class="cap__sub">Llorar es válido. Hacerlo con estrategia es mejor.</p></div>
+    </header>
+
+    <div class="llanto">
+      <figure class="llanto__gif sticker rot-l"><img src="img/llanto.gif" alt="Carita amarilla llorando que dice todo bien"><figcaption>Todo bien :')</figcaption></figure>
+      <div class="llanto__table">
+        <h3 class="h-script">Mapa de lugares para llorar</h3>
+        <table>
+          <thead><tr><th>Lugar</th><th>Discreción</th><th>Wifi</th><th>Veredicto</th></tr></thead>
+          <tbody>
+            <tr><td>Baño del ML</td><td>★★★★☆</td><td>★★★☆☆</td><td>Clásico. Eco dramático incluido.</td></tr>
+            <tr><td>Biblioteca (piso silencio)</td><td>★★☆☆☆</td><td>★★★★★</td><td>Llorar en silencio es un arte.</td></tr>
+            <tr><td>Escaleras</td><td>★★★★★</td><td>★☆☆☆☆</td><td>Nadie te ve. Todos te han visto.</td></tr>
+            <tr><td>Cafetería</td><td>★☆☆☆☆</td><td>★★★☆☆</td><td>Mínimo mil testigos y un tinto.</td></tr>
+            <tr><td>Tu cuarto</td><td>★★★★★</td><td>★★★★★</td><td>Lujo total. Cobijita incluida.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="auxilios">
+      <h3 class="h-script">Primeros auxilios (en serio)</h3>
+      <p class="aux__intro">Debajo del sarcasmo hay algo real: esta semana pesa y está bien pedir ayuda. Algunas cosas que sí sirven:</p>
+      <div class="aux__grid">
+        <article class="aux"><b>01</b><h4>Duerme algo</h4><p>Cuatro horas dormidas rinden más que ocho horas "estudiando" dormido sobre el teclado.</p></article>
+        <article class="aux"><b>02</b><h4>Divide el monstruo</h4><p>Escribe todo lo pendiente y atácalo por pedacitos. Menos pánico, más tachones.</p></article>
+        <article class="aux"><b>03</b><h4>Habla con alguien</h4><p>Tus amigos, tu familia, tus profesores. Casi todos prefieren saberlo antes del colapso.</p></article>
+        <article class="aux"><b>04</b><h4>Come y respira</h4><p>Agua, comida de verdad y diez minutos afuera. Tu cerebro es un órgano, no una máquina.</p></article>
+      </div>
+      <div class="aux__links">
+        <a class="link" href="https://uniandes.edu.co" target="_blank" rel="noopener">Sitio oficial de la Universidad de los Andes ↗</a>
+        <a class="link" href="https://biblioteca.uniandes.edu.co" target="_blank" rel="noopener">Biblioteca de la Universidad ↗</a>
+        <a class="link" href="https://es.wikipedia.org/wiki/Universidad_de_los_Andes_(Colombia)" target="_blank" rel="noopener">Historia de Los Andes (Wikipedia) ↗</a>
+        <a class="link link--alert" href="tel:106">Línea 106 (Bogotá): apoyo en salud mental, gratis ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fin" id="fin">
+  <div class="fin__bg" aria-hidden="true"><img class="foto-src" src="https://commons.wikimedia.org/wiki/Special:FilePath/Universidad_de_los_Andes.jpg?width=1800" alt="" data-credit="uni"></div>
+  <div class="fin__shade"></div>
+  <div class="wrap fin__inner">
+    <p class="tape">EPÍLOGO</p>
+    <h2 class="fin__title">SOBREVIVISTE.</h2>
+    <p class="fin__sub">(O vas a sobrevivir. O ya te rendiste con dignidad. Cualquiera de las tres opciones es válida.)</p>
+    <figure class="fin__gif sticker rot-r"><img src="img/vacaciones.gif" alt="Texto de vacaciones con confeti"></figure>
+    <p class="fin__text">Respira. Se acabó. En unas horas el calendario va a estar vacío y tu único problema será decidir qué serie ver. Descansa, duerme de verdad y agradécele a tu yo del pasado… que probablemente no hizo nada.</p>
+    <button class="btn btn--yellow btn--big" id="confettiBtn">🎉 YA ACABÉ (TOCA AQUÍ)</button>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <h3 class="h-script">Créditos</h3>
+      <p>Fanzine web hecho para <b>Taller Multimedia 1</b>, Universidad de los Andes. Proyecto académico, no oficial: no representa a la universidad.</p>
+      <p>Diseño y desarrollo: <b>Isabela Pinzón Rodríguez</b>. Animaciones con <a href="https://gsap.com" target="_blank" rel="noopener">GSAP</a>. GIFs y sonidos originales (Pillow y Web Audio API).</p>
+    </div>
+    <div>
+      <h3 class="h-script">Fotos de archivo</h3>
+      <p>Fotografías de <a href="https://commons.wikimedia.org/wiki/Category:Universidad_de_los_Andes" target="_blank" rel="noopener">Wikimedia Commons</a>, cada una con la licencia y autoría de su página original:</p>
+      <ul class="credits" id="credits"></ul>
+    </div>
+  </div>
+  <p class="footer__end">Hecho con café, ansiedad y tres horas de sueño · Semana 16 · 2026</p>
+</footer>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/Draggable.min.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
